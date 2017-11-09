@@ -4,18 +4,14 @@ public class SALARIO {
 
 	public static void main(String[] args) {
 		Scanner dados = new Scanner (System.in);
-		double sal, per, salatu, persal;
-		System.out.println("..:Aumento do Salario:..");
-		System.out.println("Qual o seu Salario?");
-		sal = dados.nextDouble();
+		double salario, percentagem, salarioatualizado, persal;
+		System.out.println("Qual o Salario?");
+		salario = dados.nextDouble();
 		System.out.println("Qual a percentagem do aumento?");
-		per = dados.nextDouble();
-		persal = sal*(per*0.01);
-		salatu = sal+persal;
-		System.out.printf("Salario Atualizado = " + salatu);
-		
-		
-		
+		percentagem = dados.nextDouble();
+		persal = salario*(percentagem*0.01);
+		salarioatualizado = salario+persal;
+		System.out.printf("Salario Atualizado = " + salarioatualizado);
 
 	}
 
